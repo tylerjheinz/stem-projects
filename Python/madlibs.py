@@ -1,9 +1,7 @@
 # Mad Libs Program
 
 storyBodies = [
-    "Testing. %s, %s, %s, %s, %s, %s",
-    "Testing. %s, %s, %s, %s, %s, %s",
-    "Testing. %s, %s, %s, %s, %s, %s"
+    "Testing. {bodyPart} {color} {shape} {favoriteArea} {time} {weather}"
 ]
 
 def questions():
@@ -41,7 +39,7 @@ def madlibs():
     storyChoice = int(input("> ")) - 1
     print("You've selected: ", storyTitles[storyChoice])
     bodyPart, color, shape, favoriteArea, time, weather = questions()
-    print(storyBodies[storyChoice] % (bodyPart, color, shape, favoriteArea, time, weather))
+    print(storyBodies[storyChoice].format(bodyPart=bodyPart, color=color, shape=shape, favoriteArea=favoriteArea, time=time, weather=weather))
 
 
 madlibs()
