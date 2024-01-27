@@ -1,2 +1,4 @@
 # stem-projects
-Small Python programs for learning/demonstrating python concepts
+Small programs for learning/demonstrating programming concepts
+
+For use by the Camp Sequassen 2024 (and beyond) STEM and Trades Program

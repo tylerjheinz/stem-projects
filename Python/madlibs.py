@@ -38,8 +38,8 @@ def madlibs():
 
     storyChoice = int(input("> ")) - 1
     print("You've selected: ", storyTitles[storyChoice])
-    bodyPart, color, shape, favoriteArea, time, weather = questions()
-    print(storyBodies[storyChoice].format(bodyPart=bodyPart, color=color, shape=shape, favoriteArea=favoriteArea, time=time, weather=weather))
+    bodyPart, color, shape, favoriteArea, time, weather = questions() # using the questions() function, we are assigning variables, and then..
+    print(storyBodies[storyChoice].format(bodyPart=bodyPart, color=color, shape=shape, favoriteArea=favoriteArea, time=time, weather=weather)) # we use them to replace the placeholders in our story bodies!
 
 
 madlibs()
